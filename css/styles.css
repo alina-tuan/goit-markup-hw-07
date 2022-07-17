@@ -19,7 +19,7 @@ body {
     margin: 0;
     color: var(--title-color);
     background-color: var(--white-color);
-    font-family: 'Roboto', sans-serif
+    font-family: 'Roboto', sans-serif;
 }
 .container {
     width: 1200px;
@@ -53,6 +53,23 @@ a {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+}
+.button {
+    min-width: 200px;
+    min-height: 50px;
+    color: var(--white-color);
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 4px;
+
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer
 }
 .header {
     border-bottom: 1px solid #ECECEC;
@@ -188,28 +205,14 @@ a {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.hero .button {
+.hero__button {
     display: inline-flex;
     padding: 10px 32px;
-    border-radius: 4px;
-    min-width: 200px;
-    color: var(--white-color);
-    background-color: var(--accent-color);
-    border: none;
-
+    
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    cursor: pointer
 }
-.hero .button:hover,
-.hero .button:focus {
+.hero__button:hover,
+.hero__button:focus {
     background-color: var(--button-hover);
     color: var(--white-color);
 }
@@ -424,24 +427,11 @@ a {
     
     color: var(--accent-color);
 }
-.modal-button {
-    width: 200px;
-    height: 50px;
-    background-color: var(--accent-color);
-    font-weight: 700;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
-    color: var(--white-color);
+.modal__button {
     padding: 10px 56px;
     margin: 0 auto;
 
-    border: none;
-
-    cursor: pointer;
-    text-align: center;
-
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -583,18 +573,21 @@ a {
 .social-media__item:not(:last-child) {
     margin-right: 10px;
 }
+.social-media__link--mode-light {
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    color: #AFB1B8;
+    background-color: var(--white-color);
+}
 .social-media__link {
     display: flex;
     align-items: center;
     justify-content: center;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    width: 44px;
-    height: 44px;
-    color: #AFB1B8;
-    background-color: var(--white-color);
-    border-radius: 50%;
 }
 .social-media__link:hover,
 .social-media__link:focus {
@@ -710,27 +703,28 @@ a {
 .join-list {
     justify-content: center;
 }
-.join-item:not(:last-child) {
+.join__item:not(:last-child) {
     margin-right: 10px;
 }
-.join-link {
+.join__link--mode-dark {
+    width: 44px;
+    height: 44px;
+    color: var(--white-color);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+.join__link {
     display: flex;
     align-items: center;
     justify-content: center;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    width: 44px;
-    height: 44px;
-    color: var(--white-color);
-    background-color: rgba(255, 255, 255, 0.1);;
-    border-radius: 50%;
 }
 .join-icon {
     fill: currentColor;
 }
-.join-link:hover,
-.join-link:focus {
+.join__link:hover,
+.join__link:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
 }
@@ -783,28 +777,17 @@ a {
 }
 .subscribe-button {
     display: flex;
-    align-items: center;
-    text-align: center;
+   
     padding: 10px 28px;
     margin-left: 12px;
 
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    color: var(--white-color);
-    background-color: var(--accent-color);
-
-    border: none;
-    cursor: pointer;
 }
 .subscribe-button-text {
     margin-right: 10px;
 }
         
-/* страница порфолио */
+/* Страница порфолио */
 
 .portfolio {
     padding-top: 94px;
