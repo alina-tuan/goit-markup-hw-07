@@ -1,4 +1,4 @@
-:root {
+/* :root {
     --hero-bg-color: #2F303A;
     --black-color: #000000;
     --title-color: #212121;
@@ -14,47 +14,51 @@
     --indent: 30px;
     --primary-icon-fill: #AFB1B8;
     --secondary-icon-fill: #FFFFFF;
-}
-body {
+} */
+/* body {
     margin: 0;
     color: var(--title-color);
     background-color: var(--white-color);
     font-family: 'Roboto', sans-serif;
-}
-.container {
+} */
+/* .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-}
-ul {
+} */
+/* .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+} */
+/* ul {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-img {
+} */
+/* img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-a {
+} */
+/* a {
     text-decoration: none;
 }
 .list {
     display: flex;
     margin: 0;
     padding: 0;
-}
-.title {
+} */
+/* .section-title {
     color: var(--title-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
-}
-.button {
+} */
+/* .button {
     min-width: 200px;
     min-height: 50px;
     color: var(--white-color);
@@ -69,9 +73,14 @@ a {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    cursor: pointer
-}
-.header {
+    cursor: pointer;
+} */
+/* .button:hover,
+.button:focus {
+    background-color: var(--button-hover);
+    color: var(--white-color);
+} */
+/* .header {
     border-bottom: 1px solid #ECECEC;
 }
 .header .logo {
@@ -154,8 +163,8 @@ a {
 .contact-link svg {
     margin-right: 10px;
     fill: currentColor;
-}
-.hero {
+} */
+/* .hero {
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -210,13 +219,9 @@ a {
     padding: 10px 32px;
     
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero__button:hover,
-.hero__button:focus {
-    background-color: var(--button-hover);
-    color: var(--white-color);
-}
-.visually-hidden {
+} */
+
+/* .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -227,7 +232,7 @@ a {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
+} */
 
 /* Модальное окно */
 .backdrop {
@@ -441,12 +446,7 @@ a {
 }
 /* Конец модального окна */
 
-.peculiarities {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
-.points {
+/* .points {
     width: 270px;
 }
 .peculiarities-box {
@@ -480,9 +480,9 @@ a {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}
-.works {
-    padding-bottom: 94px;
+} */
+/* .works {
+    padding-top: 0;
 }
 .works__title {
     margin-top: 0;
@@ -516,10 +516,8 @@ a {
     text-transform: uppercase;
     
     color: var(--white-color);
-}
-.team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+} */
+/* .team {
     background-color: var(--button-bgc-color);
 }
 .team__title {
@@ -532,6 +530,7 @@ a {
     margin: 0;
 }
 .team__member {
+    width: 270px;
     background-color: var(--white-color);
     margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -549,7 +548,7 @@ a {
 }
 .team__description {
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
     text-align: center;
 }
 .team__member-name {
@@ -557,7 +556,8 @@ a {
     margin-top: 0;
 }
 .team__member-position {
-    margin: 0;
+    margin-bottom: 16px;
+    margin-top: 0;
     color: var(--text-color);
     font-weight: 400;
     font-size: 16px;
@@ -568,12 +568,11 @@ a {
     display: flex;
     justify-content: center;
     padding-left: 0;
-    padding-bottom: 30px;
 }
 .social-media__item:not(:last-child) {
     margin-right: 10px;
-}
-.social-media__link--mode-light {
+} */
+/* .social-media__link--mode-light {
     width: 44px;
     height: 44px;
 
@@ -581,8 +580,8 @@ a {
 
     color: #AFB1B8;
     background-color: var(--white-color);
-}
-.social-media__link {
+} */
+/* .social-media__link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -593,15 +592,11 @@ a {
 .social-media__link:focus {
     color: var(--white-color);
     background-color: var(--accent-color);
-}
-.social-media__icon {
+} */
+/* .social-media__icon {
     fill: currentColor;
-}
-.clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-.clients__title {
+} */
+/* .clients__title {
     margin-bottom: 50px;
     margin-top: 0;
 }
@@ -628,7 +623,7 @@ a {
 }
 .clients__icon {
     fill: currentColor;
-}
+} */
 .footer {
     display: flex;
     padding-top: 60px;
@@ -789,10 +784,6 @@ a {
         
 /* Страница порфолио */
 
-.portfolio {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .items {
     width: 370px;
     margin-bottom: 30px;
@@ -837,17 +828,17 @@ a {
     background-color: var(--accent-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.projects {
+ /* .project-set {
     display: flex;
     flex-wrap: wrap;
     margin: calc(-1 * var(--indent) / 2);
     align-items: center;
     padding: 0;
 }
-.project-items {
+.project-set__items {
     flex-basis: calc((100% - var(--indent) * var(--items)) / var(--items));
     margin: calc(var(--indent) / 2);
-}
+} 
 .project-title {
     margin-bottom: 20px;
     margin-left: 24px;
@@ -871,7 +862,7 @@ a {
     position: relative;
     overflow: hidden;
 }
-.project-overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -887,7 +878,7 @@ a {
     justify-content: center; 
     background-color: rgba(33, 150, 243, 0.9);
 }
-.project-ov-description {
+.overlay-description {
     padding: 63px 24px;
     margin: 0;
     font-weight: 400;
@@ -897,9 +888,9 @@ a {
     
     color: var(--white-color);
 }
-.project-items:hover .project-overlay {
+.project-set__items:hover .overlay {
     transform: translateY(0);
-}
+} 
 .border {
     box-sizing: border-box;
     width: 370px;
@@ -917,4 +908,4 @@ a {
 .project-link:hover,
 .project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+}  */
