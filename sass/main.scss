@@ -1,5 +1,6 @@
 @import "./utils/vars";
 @import "./utils/visually-hidden";
+@import "./utils/placeholders";
 
 @import "./base/common";
 @import "./base/reset";
@@ -11,6 +12,7 @@
 @import "./components/social-media";
 @import "./components/section-title";
 @import "./components/overlay";
+@import "./components/form/module";
 
 @import "./layouts/header";
 @import "./layouts/hero";
@@ -19,3 +21,5 @@
 @import "./layouts/team";
 @import "./layouts/clients";
 @import "./layouts/projects";
+@import "./layouts/portfolio-filter";
+@import "./layouts/footer";

@@ -1,4 +1,5 @@
 .team {
+    @extend %section;
     background-color: var(--button-bgc-color);
 }
 

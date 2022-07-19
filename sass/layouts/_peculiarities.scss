@@ -1,3 +1,7 @@
+.peculiarities {
+    @extend %section;
+}
+
 .peculiarities-box {
     display: flex;
     align-items: center;

@@ -28,8 +28,7 @@
     padding-left: 0;
 }
 
-.social-media__item
-&:not(:last-child) {
+.social-media__item:not(:last-child) {
     margin-right: 10px;
 }
 

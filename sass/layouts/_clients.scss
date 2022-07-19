@@ -1,3 +1,7 @@
+.clients {
+    @extend %section;
+}
+
 .clients__title {
     margin-bottom: 50px;
     margin-top: 0;
