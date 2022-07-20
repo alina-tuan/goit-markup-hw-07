@@ -1,14 +1,17 @@
 .clients {
     @extend %section;
-}
 
-.clients__title {
+    &__title {
     margin-bottom: 50px;
     margin-top: 0;
-}
+    }
 
-.clients__item:not(:last-child) {
-    margin-right: 30px;
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+    &__icon {
+        fill: currentColor;
+        }
 }
 
 .clients__link {
@@ -23,14 +26,11 @@
     border: 1px solid var(--primary-icon-fill);
     border-radius: 4px;
     color: var(--primary-icon-fill);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
 }
 
-.clients__link:hover,
-.clients__link:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
-}
-
-.clients__icon {
-    fill: currentColor;
-}

@@ -13,12 +13,12 @@
     pointer-events: initial;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.backdrop.is-hidden {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
 .modal {
@@ -38,9 +38,10 @@
 .modal-form {
     display: flex;
     flex-direction: column;
-}
-.modal-form :nth-child(4) {
-    margin-bottom: 17px;
+
+    &:nth-child(4) {
+        margin-bottom: 17px;
+    }
 }
 
 .modal-title {

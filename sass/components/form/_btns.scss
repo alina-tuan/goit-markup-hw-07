@@ -5,12 +5,14 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+            background-color: #188CE8;
+        }
 }
 
-.modal-button:hover,
-.modal-button:focus {
-    background-color: #188CE8;
-}
+
 
 .modal-close-button {
     position: absolute;
@@ -35,9 +37,10 @@
 
 .modal-close-button svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus svg,
+    &:hover svg {
+            fill: var(--accent-color);
+        }
 }
 
-.modal-close-button:focus svg,
-.modal-close-button:hover svg {
-    fill: var(--accent-color);
-}

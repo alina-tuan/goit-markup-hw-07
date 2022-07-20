@@ -30,18 +30,18 @@
 
 .main-nav__link--current {
     position: relative;
-}
 
-.main-nav__link--current::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
+&::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
 
-    width: 100%;
-    height: 4px;
-    background: var(--accent-color);
-    border-radius: 2px;
+        width: 100%;
+        height: 4px;
+        background: var(--accent-color);
+        border-radius: 2px;
+    }
 }
 
 .main-nav {
@@ -58,6 +58,11 @@
 
 .main-nav__link {
     color: var(--title-color);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
 .main-nav__link .main-nav__link--current,
@@ -77,10 +82,6 @@
     margin-right: 50px;
 }
 
-.main-nav__list .main-nav__link:hover,
-.main-nav__list .main-nav__link:focus {
-    color: var(--accent-color);
-}
 
 .main-nav__contact {
     margin-left: auto;
